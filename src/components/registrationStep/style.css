@@ -1,0 +1,93 @@
+.block-registration{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 460px;
+    margin: auto;
+}
+.block-registration-component{
+    border: 1px solid rgb(9, 9, 78);
+    border-radius: 5px;
+    width: 65%;
+    margin-left: auto;
+    position: relative;
+    padding: 20px 20px;
+}
+.final-block-registration-component{
+    background-color: rgb(9, 9, 78);
+    padding: 15px;
+}
+.notShow{
+    display: none;
+}
+.showOnlyRegistrationBlock{
+    display: block;
+    height: 100%;
+   
+}
+.final-step-registration{
+    background-color: rgb(9, 9, 78);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.show-all-steps-registration{
+    /* display: block; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.description-text{
+    margin: 0;
+    width: 100%;
+}
+.show-text-button{
+    display: block;
+    font-size: 15px;
+}
+.button-steps{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1339px){
+    .block-registration{
+        width: 75%;
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .block-registration{
+        width: 80%;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .block-registration{
+        flex-direction: column-reverse;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    .block-registration-component{
+        width: 90%;
+        height: 300px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        padding: 10px 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

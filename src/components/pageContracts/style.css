@@ -1,0 +1,10 @@
+.block-page-contracts{
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .block-page-contracts{
+        padding-top: 0;
+    }
+
+}

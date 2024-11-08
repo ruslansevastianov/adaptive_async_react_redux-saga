@@ -1,0 +1,313 @@
+.block-step-by-step{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+.add-type-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* width: 100%; */
+}
+.circle-step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+}
+.text-circle{
+    display: flex;
+    flex: 1;
+}
+.line-step{
+    width:  1px;
+    background-color: grey;
+    flex: 1;
+}
+.add-line-step{
+    display: none;
+}
+.circle-step-active{
+    background-color: rgb(9, 9, 78);
+}
+.circle-step-success{
+    background-color: white;
+    border: 2px solid green;
+}
+
+.icon-arrow{
+    width: 18px;
+    height: 10px;
+    border-bottom: 3px solid green;
+    border-left: 3px solid green;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.icon-arrow-not-show{
+    display: none;
+}
+.type-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.type2-steps{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.text-step-by-step{
+    margin-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+.text-description-step-by-step{
+    font-size: 14px;
+    color: grey;
+    background-color: white;
+}
+.notSow-text-description-step-by-step{
+    display: none;
+}
+.text-krok{
+    font-size: 13px;
+    margin-bottom: -15px;
+    display: none;
+}
+.text-krok-not-show{
+    display: none;
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 767px){
+
+    .block-step-by-step{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .text-circle{
+        flex-direction: column;
+        /* border: 1px solid green;  */
+    }
+    .type-steps{
+        flex-direction: row;
+        width: 100%;
+        margin-left: 35%;
+    }
+    .add-type-steps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+    .type2-steps{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        width: 65%;
+    }
+
+    .text-step-by-step{
+        margin-left: 0;
+        font-size: 12px;
+        text-align: center;
+        flex: 1;
+    }
+    .text-description-step-by-step{
+        display: none;
+    }
+    .line-step{
+        height: 1px;
+    }
+    .add-line-step{
+        display: block;
+        height:  1px;
+        background-color: grey;
+        flex: 1;
+    }
+    .circle-step-success{
+        margin-top: -3px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 540px){
+    
+    .block-step-by-step{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .text-circle{
+        flex-direction: column;
+        /* border: 1px solid green;  */
+    }
+    .type-steps{
+        flex-direction: row;
+        width: 100%;
+        margin-left: 25%;
+    }
+    .add-type-steps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+    .type2-steps{
+        flex-direction: row;
+        align-items: center;
+        width: 72%;
+    }
+
+    .text-step-by-step{
+        margin-left: 0;
+        font-size: 12px;
+        text-align: center;
+        flex: 1;
+    }
+    .text-description-step-by-step{
+        display: none;
+    }
+    .line-step{
+        height: 1px;
+    }
+    .add-line-step{
+        display: block;
+        height:  1px;
+        background-color: grey;
+        flex: 1;
+    }
+    .circle-step-success{
+        margin-top: -3px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .block-step-by-step{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .text-circle{
+        flex-direction: column;
+        /* border: 1px solid green;  */
+    }
+    .type-steps{
+        flex-direction: row;
+        width: 100%;
+        margin-left: 20%; 
+    }
+    .add-type-steps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+    .type2-steps{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        width: 80%;
+    }
+
+    .text-step-by-step{
+        margin-left: 0;
+        font-size: 12px;
+        text-align: center;
+        flex: 1;
+    }
+    .text-description-step-by-step{
+        display: none;
+    }
+
+    .line-step{
+        height: 1px;
+    }
+    .add-line-step{
+        display: block;
+        height:  1px;
+        background-color: grey;
+        flex: 1;
+    }
+    .circle-step-success{
+        margin-top: -3px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+
+    .block-step-by-step{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .text-circle{
+        flex-direction: column;
+        /* border: 1px solid green;  */
+    }
+    .type-steps{
+        flex-direction: row;
+        width: 100%;
+        margin-left: 20%; 
+    }
+    .add-type-steps{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+    }
+    .type2-steps{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        width: 80%;
+    }
+    .text-step-by-step{
+        margin-left: 0;
+        font-size: 9px;
+        text-align: center;
+        flex: 1;
+    }
+    .text-description-step-by-step{
+        display: none;
+    }
+    .line-step{
+        height: 0.5px;
+    }
+    .add-line-step{
+        display: block;
+        height:  0.5px;
+        background-color: grey;
+        flex: 1;
+    }
+    .circle-step{
+        width: 35px;
+        height: 35px;
+    }
+    .icon-arrow{
+        width: 16px;
+        height: 8px;
+        top: 27%;
+        left: 27%;
+    }
+    .circle-step-success{
+        margin-top: -3px;
+    }
+}
+
+
+
+

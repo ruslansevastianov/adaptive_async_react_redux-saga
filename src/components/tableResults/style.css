@@ -1,0 +1,259 @@
+.block-for-table{
+    display: block;
+}
+.block-for-expander-list{
+    display: none;
+}
+.block-table-results{
+    /* width: 80%;
+    margin: auto; */
+    background-color: white;
+    border-radius: 4px;
+    /* border: 1px solid rgb(9, 9, 78); */
+    padding: 10px;
+}
+.notShow{
+    display: none;
+}
+.block-header-table{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.header-name-list{
+    flex: 1;
+    font-weight: 600;
+    font-size: 14px;
+}
+.tmp{
+    width: 40px;
+    /* font-weight: 600; */
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 5px;
+    height: 40px;
+}
+.column{
+    flex: 1;
+}
+.column-first{
+    flex: 1;
+    color:  rgb(2, 2, 95);
+    font-weight: 400;
+}
+.column-first-text{
+    display: none;
+}
+.column-text{
+    display: none;
+}
+.header-block-table{
+    border-bottom: 2px solid rgb(2, 2, 95);
+}
+.bell-header-block{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+}
+.bell-header-block > p{
+    font-size: 19px;
+    color: rgb(2, 2, 95);
+    cursor: pointer;
+}
+.bell-table-not-empty{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.bell-table-empty{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.notShowBell{
+    display: none;
+}
+
+/* .bell-not-empty-table{
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    position: relative;
+} */
+.bell-circle{
+    width: 16px;
+    height: 16px;
+    /* border: 2px solid red; */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    font-size: 12px;
+}
+.bell-text{
+    display: block;
+}
+/* статусы-доставка */
+.status-delivery-pending{
+    background-color: rgb(186, 186, 186);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-delivery-sent{
+    background-color: rgb(247, 247, 119);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-delivery-delivering{
+    background-color: rgb(84, 123, 239);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-delivery-delivered{
+    border-radius: 10px;
+    background-color: rgb(78, 215, 78);
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+/* статусы-бронирование */
+.status-booking-issued{
+    background-color: rgb(218, 170, 25);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-booking-sent{
+    background-color: rgb(247, 247, 119);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-booking-processing{
+    background-color: rgb(137, 80, 221);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-booking-approved{
+    border-radius: 10px;
+    background-color: rgb(78, 215, 78);
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+/* статусы-оплата */
+.status-payment-expected{
+    background-color: rgb(186, 186, 186);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-payment-review{
+    background-color: rgb(241, 111, 157);
+    color: rgb(65, 64, 64);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+.status-payment-paid{
+    border-radius: 10px;
+    background-color: rgb(78, 215, 78);
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 21px;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .status{
+        border-radius: 5px;
+        width: 70px;
+        height: 18px;
+        font-size: 12px;
+        color: white;
+    }
+    .column{
+        font-size: 12px;
+    }
+    .column-first{
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .bell-text{
+        display: none;
+    }
+    .bell-header-block{
+        width: 50px;
+    }
+    .block-for-table{
+        display: none;
+    }
+    .header-block-table{
+        margin-bottom: 30px;
+    }
+    .block-for-expander-list{
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
